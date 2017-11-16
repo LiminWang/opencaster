@@ -19,10 +19,13 @@
 #define _BSD_SOURCE 1
 
 #include <stdio.h> 
-#include <stdio_ext.h> 
 #include <unistd.h> 
+#ifdef __APPLE__
+#include <net/ethernet.h>
+#else
 #include <netinet/ether.h>
 #include <netinet/in.h>
+#endif
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>

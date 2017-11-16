@@ -28,6 +28,34 @@
 #include <sys/time.h>
 #include <inttypes.h>
 
+#ifdef __APPLE__
+#include <errno.h>
+#define    CLOCK_REALTIME    0x2d4e1588
+#define    CLOCK_MONOTONIC   0x0
+
+/*
+ * Bellow we provide an alternative for clock_gettime,
+ * which is not implemented in Mac OS X.
+ */
+static inline int clock_gettime(int clock_id, struct timespec *ts)
+{
+    struct timeval tv;
+
+    if (clock_id != CLOCK_REALTIME)
+    {
+        errno = EINVAL;
+        return -1;
+    }
+    if (gettimeofday(&tv, NULL) < 0)
+    {
+        return -1;
+    }
+    ts->tv_sec = tv.tv_sec;
+    ts->tv_nsec = tv.tv_usec * 1000;
+    return 0;
+}
+#endif
+
 #define TS_PACKET_SIZE 188
 #define MAX_PID 8192
 

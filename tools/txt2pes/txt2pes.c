@@ -19,10 +19,7 @@
 #define _BSD_SOURCE 1
 
 #include <stdio.h> 
-#include <stdio_ext.h> 
 #include <unistd.h> 
-#include <netinet/ether.h>
-#include <netinet/in.h>
 #include <stdio.h>
 #include <fcntl.h>
 #include <string.h>

@@ -12,8 +12,6 @@
 #include <sys/socket.h>
 #include <net/if.h>
 
-#include <net/if_tun.h>
-
 #include "sectioncrc.h"
 
 /* pre 2.4.6 compatibility */

@@ -1,6 +1,10 @@
 C      = gcc
 CFLAGS  += -g -MD -Wall -I. -I../../include -D_FILE_OFFSET_BITS=64 $(CPPFLAGS)
-LDFLAGS  += -lc -lrt
+LDFLAGS  += -lc
+OS := $(shell uname -s)
+ifeq ($(OS),Linux)
+	LFLAGS += -lrt
+endif
 
 OBJS = tstimedwrite.o
 TARGET = tstimedwrite
