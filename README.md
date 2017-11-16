@@ -1,9 +1,9 @@
 # OpenCaster 
 
-## ==Contact==
+## Contact
 Lorenzo Pallara (l.pallara@avalpa.com)
 
-## ==Introduction==
+## Introduction
 This package is a collection of softwares for Linux system to play out and multiplex MPEG2 transport stream format
 Use-cases:
 MHP, MHEG5, HbbTv and others interactive tv standards object carousel broadcast
@@ -17,16 +17,16 @@ IP encapsualtor
 PSI/SI generator
 EPG generator
 
-## ==Integration==
+## Integration
 OpenCaster output has been successfully integrated with a long list of dvb products, among them there are products by Cisco/Scientific Atlanta, Ericsson/Tandberg, Dektec, Eurotek, Harmonic/Scopus, MainConcept, Mitan, Screen Service, Adtec, Wellav, Arris, Sr-Systems, Deltacast, ...
 
-## ==Manual==
-Avalpa Broadcast Server manual is available here: http://www.avalpa.com/the-key-values/15-free-software/33-opencaster
+## Manual
+Avalpa Broadcast Server manual is available [here](http://www.avalpa.com/the-key-values/15-free-software/33-opencaster)
 
-## ==Test==
+## Test
 OpenCaster has been tested with Rohde & Schwarz DVM100L, Rohde & Schwarz DVM 400, Dektec StreamXpert and a countless number of set top boxes, digital receivers and television sets
 
-## ==Technical features==
+## Technical features
 * PSI generation (PAT, PMT, NIT, SDT, TDT, AIT, TOT, ...)
 * EPG/EIT generation
 * Object and data carousel generation and receivement (MHP, MHEG5, HbbTv, DVB-SSU, DSMCC, ...)
@@ -46,10 +46,10 @@ OpenCaster has been tested with Rohde & Schwarz DVM100L, Rohde & Schwarz DVM 400
 * MPEG2 video and MPEG2/AC-3 audio ES header analyzer
 * M2TS file generation from TS file
 
-## ==Demo==
-A demonstration transport stream is available at this address:http://www.avalpa.com/the-key-values/15-free-software/59-opencaster-demo-roll
+## Demo
+A demonstration transport stream is available at [here](http://www.avalpa.com/the-key-values/15-free-software/59-opencaster-demo-roll)
 
-## ==Handy tables==
+## Handy tables
 
 DVB-T modulations:
 
